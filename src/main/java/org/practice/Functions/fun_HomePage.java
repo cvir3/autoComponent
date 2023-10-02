@@ -2,7 +2,7 @@ package org.practice.Functions;
 
 
 import org.practice.Utilities.baseClass;
-import org.practice.Elements.ele_HomePage;
+import org.practice.Elements.webElements;
 import org.openqa.selenium.WebDriver;
 
 
@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class fun_HomePage extends baseClass {
     WebDriver webDriver;
-    ele_HomePage ele = new ele_HomePage();
+    webElements ele = new webElements();
 
     public fun_HomePage(WebDriver remoteDriver) {
         webDriver = remoteDriver;

@@ -1,18 +1,16 @@
 package org.practice.Functions;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
-import org.practice.Elements.ele_HomePage;
+import org.practice.Elements.webElements;
 import org.practice.Utilities.baseClass;
 import org.practice.Utilities.testBase;
-import org.openqa.selenium.JavascriptExecutor;
 
 import java.io.IOException;
 
 public class fun_ScrollUp_Down extends baseClass {
 
     WebDriver webDriver;
-    ele_HomePage ele = new ele_HomePage();
+    webElements ele = new webElements();
     testBase tB = new testBase();
 
     public fun_ScrollUp_Down(WebDriver remoteDriver) {

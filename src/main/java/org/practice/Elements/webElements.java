@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class ele_HomePage {
+public class webElements {
     WebDriver webDriver;
 
     public By clickOnPractice = By.xpath ("//a[normalize-space()='PRACTICE']");
@@ -18,6 +18,9 @@ public class ele_HomePage {
     public By btnConfirmed = By.id("confirmbtn");
     public By scrollDown = By.xpath("(//div[@class='overly'])[4]");
     public By scrollUp = By.xpath("//nav[@class='navbar sbpro-navbar-left-right']");
+    public By clickOniFrame = By.xpath("//div[@id='iframe-example-div']");
+    public By ifsrolldown = By.xpath("//div[@id='iframe-example-div']//fieldset");
+    public By clickOnInterview = By.xpath("//a[normalize-space()='INTERVIEW']");
 
 
 }

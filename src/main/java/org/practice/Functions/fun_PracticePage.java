@@ -2,21 +2,18 @@ package org.practice.Functions;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
-import org.practice.Elements.ele_HomePage;
+import org.practice.Elements.webElements;
 import org.practice.Utilities.baseClass;
 import org.practice.Utilities.testBase;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.time.Duration;
 
 public class fun_PracticePage extends baseClass {
 
     WebDriver webDriver;
-    ele_HomePage ele = new ele_HomePage();
+    webElements ele = new webElements();
     testBase tB = new testBase();
 
 
