@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" parallel="tests">
+    <test name="Regression Testing">
+        <classes>
+            <class name="org.practice.TestCases.tc01_HomePage">
+                <methods>
+                    <include name="TestCase001_HomePage"/>
+                </methods>
+            </class>
+            <class name="org.practice.TestCases.tc02_PracticePage">
+                <methods>
+                    <include name="Test002_PracticePage"/>
+                </methods>
+            </class>
+            <class name="org.practice.TestCases.tc03_ScrollUp_Down">
+                <methods>
+                    <include name="Test003_ScrollPage"/>
+                </methods>
+            </class>
+            <class name="org.practice.TestCases.tc04_iFrame">
+                <methods>
+                    <include name="Test004_iFrame"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
