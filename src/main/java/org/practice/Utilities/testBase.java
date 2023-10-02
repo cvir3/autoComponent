@@ -1,6 +1,7 @@
 package org.practice.Utilities;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,11 +12,6 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class testBase extends baseClass {
-
-//    public void expWait(String data){
-//        WebDriverWait wait = new WebDriverWait(webDriver, Duration.ofSeconds(5));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(data)));
-//    }
 
     private WebDriverWait wait;
 
@@ -29,7 +25,6 @@ public class testBase extends baseClass {
         element.click();
     }
 
-
     public void switchTab() throws InterruptedException, IOException {
         Set<String> w = webDriver.getWindowHandles();
         // window handles iterate
@@ -40,6 +35,10 @@ public class testBase extends baseClass {
         //webDriver.switchTo().window(hp);
         // switching child window
         webDriver.switchTo().window(pp);
-
     }
+
+    public void scrollPage(WebElement element) {
+        ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
 }
