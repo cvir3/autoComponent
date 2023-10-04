@@ -1,10 +1,8 @@
 package org.practice.Functions;
 
-
 import org.practice.Utilities.baseClass;
 import org.practice.Elements.webElements;
 import org.openqa.selenium.WebDriver;
-
 
 import java.io.IOException;
 import java.util.Iterator;

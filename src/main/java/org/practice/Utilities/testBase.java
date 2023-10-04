@@ -40,5 +40,4 @@ public class testBase extends baseClass {
     public void scrollPage(WebElement element) {
         ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
-
 }
